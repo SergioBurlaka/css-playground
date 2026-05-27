@@ -1,0 +1,23 @@
+.card {
+  padding: 2em;
+  border-radius: 12px;
+  background: #3b2ec8;
+  display: grid;
+  place-items: center;
+  scale: 0.5;
+  opacity: 0;
+  animation: popIn 0.5s ease-in-out forwards;
+  animation-delay: calc(sibling-index() * 50ms);
+}
+
+.page-content:has(.card) {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@keyframes popIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,5 @@
+.gradient-card {
+--progress: calc(sibling-index() / sibling-count());
+background-color: oklch(calc(40% + var(--progress) * 40%) 0.2 270deg);
+}
+

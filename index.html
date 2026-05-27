@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div data-include="/partials/header.html"></div>
-    <main id="router-view"></main>
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="header.html"></div>
+    <div
+      class="page-content"
+      data-include="/src/components/glowing-cart/glowing-cart.html"
+    ></div>
+    <div
+      class="page-content"
+      data-include="/src/components/sinling-index/sinling-index.html"
+    ></div>
+    <div
+      class="page-content"
+      data-include="/src/components/sinling-count/sinling-count.html"
+    ></div>
+    <div data-include="footer.html"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

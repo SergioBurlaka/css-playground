@@ -1,3 +1,7 @@
+@import "./components/glowing-cart/glowing-cart.css";
+@import "./components/sinling-index/sinling-index.css";
+@import "./components/sinling-count/sinling-count.css";
+
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +26,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #0e2136;
+  opacity: 0.5;
 }
 
 .site-logo {
@@ -45,17 +56,14 @@ a {
   color: #ffffff;
 }
 
-#router-view {
-  flex: 1;
-  display: flex;
-}
+
 
 .page-content {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 48px 24px;
+  padding: 1rem 1rem;
   text-align: center;
 }
 
@@ -84,54 +92,4 @@ a {
 .site-footer {
   color: #b8c7d9;
   text-align: center;
-}
-
-.box {
-  background: #142d4a;
-  height: 200px;
-  aspect-ratio: 1/1;
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.box h1 {
-  font-size: 24px;
-}
-
-@property --deg {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0deg;
-}
-
-.box::before,
-.box::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: conic-gradient(
-    from var(--deg) at center,
-    #00c3ff,
-    #4d0199,
-    #6300c6,
-    #00c3ff
-  );
-  border-radius: inherit;
-  z-index: -2;
-  padding: 2px;
-  animation: autoRotate 2s linear infinite;
-}
-
-.box::after {
-  filter: blur(10px);
-}
-@keyframes autoRotate {
-  to {
-    --deg: 360deg;
-  }
 }
