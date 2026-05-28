@@ -1,0 +1,49 @@
+.page-container {
+  background: #a855f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  flex: 1;
+}
+
+span {
+  position: relative;
+  font-family: Lato, sans-serif;
+  top: 20px;
+  color: white;
+  display: inline-block;
+  font-size: 5rem;
+  text-shadow:
+    0 1px 0 #b7b7b7,
+    0 2px 0 #b7b7b7,
+    0 3px 0 #b7b7b7,
+    0 4px 0 #b7b7b7,
+    0 5px 0 #b7b7b7,
+    0 6px 0 transparent,
+    0 7px 0 transparent,
+    0 8px 0 transparent,
+    0 9px 0 transparent,
+    0 10px 10px rgba(0, 0, 0, 0.5);
+
+  animation: bounce 0.4s ease infinite alternate;
+  animation-delay: calc(sibling-index() * 50ms);
+}
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #ccc,
+      0 3px 0 #ccc,
+      0 4px 0 #ccc,
+      0 5px 0 #ccc,
+      0 6px 0 #ccc,
+      0 7px 0 #ccc,
+      0 8px 0 #ccc,
+      0 9px 0 #ccc,
+      0 60px 30px rgba(0, 0, 0, 0.3);
+  }
+}

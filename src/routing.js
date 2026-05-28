@@ -1,15 +1,21 @@
+import { resolveAsset } from "./paths.js";
+
 const routes = {
   "glowing-cart": {
-    file: "/src/components/glowing-cart/glowing-cart.html",
+    file: resolveAsset("src/components/glowing-cart/glowing-cart.html"),
     title: "Glowing Cart",
   },
   "sinling-index": {
-    file: "/src/components/sinling-index/sinling-index.html",
+    file: resolveAsset("src/components/sinling-index/sinling-index.html"),
     title: "Sinling index",
   },
   "sinling-count": {
-    file: "/src/components/sinling-count/sinling-count.html",
+    file: resolveAsset("src/components/sinling-count/sinling-count.html"),
     title: "Sinling count",
+  },
+  "text-bounce": {
+    file: resolveAsset("src/components/text-bounce/text-bounce.html"),
+    title: "Text bounce",
   },
 };
 

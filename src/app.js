@@ -1,4 +1,5 @@
 import { initRouter } from "./routing.js";
+import { resolveAsset } from "./paths.js";
 
 async function loadHtml(file, element) {
   const response = await fetch(file);
@@ -16,7 +17,7 @@ async function loadIncludes() {
 
   await Promise.all(
     includes.map((element) => {
-      const file = element.getAttribute("data-include");
+      const file = resolveAsset(element.getAttribute("data-include"));
 
       return loadHtml(file, element);
     }),
