@@ -1,3 +1,4 @@
+@import "./components/header/header.css";
 @import "./components/glowing-cart/glowing-cart.css";
 @import "./components/sinling-index/sinling-index.css";
 @import "./components/sinling-count/sinling-count.css";
@@ -17,46 +18,9 @@ a {
   color: inherit;
 }
 
-.site-header,
 .site-footer {
   padding: 24px;
 }
-
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background-color: #0e2136;
-  opacity: 0.5;
-}
-
-.site-logo {
-  font-size: 20px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.site-nav {
-  display: flex;
-  gap: 16px;
-}
-
-.site-nav a {
-  color: #b8c7d9;
-  text-decoration: none;
-}
-
-.site-nav a:hover,
-.site-nav a.active {
-  color: #ffffff;
-}
-
-
 
 .page-content {
   flex: 1;
@@ -65,28 +29,6 @@ a {
   align-items: center;
   padding: 1rem 1rem;
   text-align: center;
-}
-
-.shop-page h1,
-.glowing-page h1 {
-  margin: 0;
-}
-
-.shop-page h1 {
-  max-width: 640px;
-  font-size: clamp(40px, 7vw, 84px);
-}
-
-.shop-page p {
-  color: #b8c7d9;
-  font-size: 18px;
-}
-
-.shop-page .eyebrow {
-  margin-bottom: 12px;
-  color: #00c3ff;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
 .site-footer {

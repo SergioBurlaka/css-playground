@@ -3,3 +3,8 @@
 background-color: oklch(calc(40% + var(--progress) * 40%) 0.2 270deg);
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
