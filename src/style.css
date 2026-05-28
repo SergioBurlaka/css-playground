@@ -20,7 +20,7 @@ a {
 }
 
 .site-footer {
-  padding: 24px;
+  padding: 0.25rem;
 }
 
 .page-content {
@@ -34,4 +34,10 @@ a {
 .site-footer {
   color: #b8c7d9;
   text-align: center;
+  background-color: #0e2136;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

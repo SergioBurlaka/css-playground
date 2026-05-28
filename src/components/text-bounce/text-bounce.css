@@ -1,13 +1,21 @@
+/* Let the route view stretch so .page-container can fill remaining space */
+.page-content:has(.page-container) {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+  text-align: initial;
+}
+
 .page-container {
   background: #a855f7;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
   flex: 1;
+  overflow: hidden;
 }
-
 span {
   position: relative;
   font-family: Lato, sans-serif;
