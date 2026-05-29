@@ -4,7 +4,9 @@ background-color: oklch(calc(40% + var(--progress) * 40%) 0.2 270deg);
 }
 
 .container {
+  width: 100%;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%) , 1fr));
   gap: 1rem;
 }
