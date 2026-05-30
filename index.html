@@ -12,5 +12,14 @@
     <main class="page-content" id="router-view"></main>
     <div data-include="footer.html"></div>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/components/header/burger-menu.js"></script>
+    <script>
+      const burger = document.querySelector(".burger-icon");
+
+      burger.addEventListener("click", () => {
+        console.log("hello");
+        burger.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
